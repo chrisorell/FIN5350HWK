@@ -33,7 +33,7 @@ M = 10,000 #simulations
 
 def AsianArithmeticOption():
     
-    v = r -div - 0.5 * vol * vol
+    v = r -div - 0.5 * vol * vol #Black Scholes price
     a = np.log(G[t]) + ((N - M) / N) (np.log(S) + v (t[M + 1] - t) + 0.5 (v) * (T -t[M + 1]))
     b = (((N - M)**2) / N * N) * vol * vol * (t[M + 1] - t) + (((vol * vol) * (T - t[M + 1]) / (6 * (N * N))) * (N - M) * (2 * (N - M) - 1))
     x = ((a - np.log(K) + b) / np.sqrt(b))
